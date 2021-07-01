@@ -1,0 +1,12 @@
+.info {
+    &__content-box {
+        @include container;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $mainGray;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+}

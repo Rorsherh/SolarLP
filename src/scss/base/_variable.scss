@@ -1,5 +1,8 @@
-$mainRed: #c70101;
-$maxWidth: 970px;
+$mainGray: #868585;
+$mainWhite: #ffffff;
+$mainBlack: #303030;
+$hoverColor: #a9a32a;
+$maxWidth: 1220px;
 
 @mixin borderblack {
   outline: 1px solid black;
@@ -16,4 +19,5 @@ $maxWidth: 970px;
 @mixin container {
   max-width: $maxWidth;
   margin: 0 auto;
+  padding: 0 10px;
 }

@@ -1,5 +1,102 @@
 .main-header {
-  color: red;
-  text-decoration: underline;
-  padding-top: 120px;
+  text-align: center;
+  color: $mainWhite;
+  background: url('../img/header-bg.jpg') center center/cover no-repeat;
+  margin-bottom: 150px;
+  
+  background-color: #485143;
+  &__content-box {
+    @include container;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 38px;
+  }
+
+  &__tagline {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: auto;
+  }
+
+  &__title {
+    padding: 0;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 87px;
+    font-variant: small-caps;
+    span {
+      display: block;
+      // font-weight: 400;
+      font-size: 42px;
+      line-height: 57px;
+    }
+  }
+
+  &__consultation {
+    display: block;
+    position: relative;
+    max-width: 310px;
+    height: 100px;
+    padding: 59px 0 16px 50px;
+    margin-bottom: auto;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: none;
+    & span {
+      position: relative;
+      z-index: 1;
+    }
+    & svg {
+      z-index: 0;
+    }
+    &:hover .path-hover {
+      fill : $hoverColor;
+    }
+  }
+
+  &__consultation-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__social-list {
+    width: 100%;
+    max-width: 220px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__social-item {
+
+  }
+
+  &__social-link {
+    color: inherit;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    &--ins {
+      background: url('../icons/instagram.png') center center no-repeat;
+    }
+    &--tel {
+      background: url('../icons/telegram.png') center center no-repeat;
+    }
+    &--app {
+      background: url('../icons/whatsapp.png') center center no-repeat;
+    }
+    &--face {
+      background: url('../icons/facebook.png') center center no-repeat;
+    }
+  }
 }

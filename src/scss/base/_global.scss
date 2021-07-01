@@ -9,8 +9,10 @@ html {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 19px;
+  color: $mainBlack;
 }

@@ -1,0 +1,53 @@
+.service {
+    margin-bottom: 150px;
+    
+    &__content-box {
+        @include container;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $mainGray;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        flex-basis: 510px;
+
+
+    }
+
+    &__item {
+        margin-bottom: 50px;
+    }
+
+    &__item-header {
+        margin: 0;
+        margin-bottom: 15px;
+        padding: 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    &__text {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__img {
+        flex-basis: 600px;
+        object-fit: cover;
+    }
+
+    
+}
