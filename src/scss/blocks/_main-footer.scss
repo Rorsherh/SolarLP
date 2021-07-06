@@ -1,0 +1,156 @@
+.main-footer {
+  background: url("../img/footer-bg.jpg") center center/cover no-repeat;
+  background-color: $mainBlack;
+  color: $mainWhite;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  &__content-box {
+    @include container;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+
+  &__form {
+    flex-basis: 510px;
+  }
+
+  &__form-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+
+  &__form-name,
+  &__form-phone {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $mainWhite;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 60px;
+    padding-bottom: 11px;
+    color: $mainWhite;
+    &::placeholder {
+      color: $mainWhite;
+    }
+  }
+
+  &__consultation {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin-bottom: auto;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    & span {
+      display: block;
+      position: absolute;
+      left: 50px;
+      bottom: 16px;
+      z-index: 1;
+    }
+    & svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    &:hover .path-hover {
+      fill: $hoverColor;
+    }
+  }
+
+  &__contact {
+    flex-basis: 600px;
+  }
+
+  &__contact-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  &__contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__contact-item {
+    margin-bottom: 30px;
+  }
+
+  &__contact-phone {
+    text-decoration: none;
+    color: $mainWhite;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $mainWhite;
+  }
+
+  &__logo {
+    transform: translate(0px, 10px);
+  }
+
+  &__social-list {
+    width: 100%;
+    max-width: 220px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__social-link {
+    color: inherit;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    &--ins {
+      background: url("../icons/instagram.png") center center no-repeat;
+    }
+    &--tel {
+      background: url("../icons/telegram.png") center center no-repeat;
+    }
+    &--app {
+      background: url("../icons/whatsapp.png") center center no-repeat;
+    }
+    &--face {
+      background: url("../icons/facebook.png") center center no-repeat;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 .main-header {
   text-align: center;
   color: $mainWhite;
-  background: url('../img/header-bg.jpg') center center/cover no-repeat;
+  background: url("../img/header-bg.jpg") center center/cover no-repeat;
   margin-bottom: 150px;
-  
+
   background-color: #485143;
   &__content-box {
     @include container;
@@ -55,8 +55,9 @@
     & svg {
       z-index: 0;
     }
+
     &:hover .path-hover {
-      fill : $hoverColor;
+      fill: $hoverColor;
     }
   }
 
@@ -74,10 +75,6 @@
     list-style: none;
   }
 
-  &__social-item {
-
-  }
-
   &__social-link {
     color: inherit;
     font-size: 0;
@@ -87,16 +84,16 @@
     height: 30px;
 
     &--ins {
-      background: url('../icons/instagram.png') center center no-repeat;
+      background: url("../icons/instagram.png") center center no-repeat;
     }
     &--tel {
-      background: url('../icons/telegram.png') center center no-repeat;
+      background: url("../icons/telegram.png") center center no-repeat;
     }
     &--app {
-      background: url('../icons/whatsapp.png') center center no-repeat;
+      background: url("../icons/whatsapp.png") center center no-repeat;
     }
     &--face {
-      background: url('../icons/facebook.png') center center no-repeat;
+      background: url("../icons/facebook.png") center center no-repeat;
     }
   }
 }

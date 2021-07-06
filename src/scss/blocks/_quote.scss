@@ -1,0 +1,17 @@
+.quote {
+  min-height: 500px;
+  margin: 0;
+  margin-bottom: 150px;
+  padding: 0;
+  padding-top: 128px;
+  background: url("../img/quote.jpg") center center/cover no-repeat;
+  &__text {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 675px;
+    color: $mainWhite;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+  }
+}
