@@ -80,6 +80,7 @@
 
   &__contact {
     flex-basis: 600px;
+    margin-left: 80px;
   }
 
   &__contact-title {
@@ -152,5 +153,65 @@
     &--face {
       background: url("../icons/facebook.png") center center no-repeat;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .main-footer {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .main-footer__top {
+    flex-direction: column;
+
+    margin-bottom: 40px;
+  }
+
+  .main-footer__form {
+    width: 80%;
+    flex-basis: auto;
+    margin-bottom: 50px;
+  }
+
+  .main-footer__form-title {
+    margin-bottom: 30px;
+  }
+
+  .main-footer__form-phone {
+    margin-bottom: 30px;
+  }
+
+  .main-footer__consultation {
+    transform: scale(0.85);
+  }
+
+  .main-footer__contact {
+    margin-left: 0;
+    flex-basis: auto;
+  }
+
+  .main-footer__contact-title {
+    margin-bottom: 30px;
+  }
+
+  .main-footer__bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-footer__link {
+    order: +2;
+    margin-top: 25px;
+  }
+
+  .main-footer__logo {
+    margin-top: 20px;
+    transform: none;
+  }
+
+  .main-footer__social-list {
+    padding: 0;
+    margin: 8px auto;
   }
 }

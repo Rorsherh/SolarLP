@@ -1,4 +1,5 @@
 .quote {
+  width: 100%;
   min-height: 500px;
   margin: 0;
   margin-bottom: 150px;
@@ -13,5 +14,27 @@
     font-size: 42px;
     line-height: 57px;
     text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .quote {
+    min-height: auto;
+    padding: 35px 10px;
+    margin-bottom: 100px;
+    &__text {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .quote {
+    margin-bottom: 50px;
+  }
+  .quote__text {
+    font-size: 22px;
+    line-height: 28px;
   }
 }

@@ -1,8 +1,8 @@
 .clients {
+  margin-bottom: 150px;
   &__content-box {
     @include container;
     padding-bottom: 30px;
-    margin-bottom: 150px;
   }
 
   &__title {
@@ -95,5 +95,63 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .clients {
+    margin-bottom: 100px;
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+
+  .clients__slide {
+    display: block;
+  }
+
+  .clients__left-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 300px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .clients__left-content-inner {
+    width: 100%;
+    margin: 0;
+  }
+
+  .clients__img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 300px;
+    margin: 0;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .clients__text {
+    margin-bottom: 30px;
+  }
+
+  .clients__text p {
+    padding-left: 0;
+  }
+
+  .clients__consultation {
+    transform: scale(0.8);
+    max-width: 340px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 510px) {
+  .clients {
+    margin-bottom: 50px;
+    &__title {
+      margin-bottom: 30px;
+    }
   }
 }

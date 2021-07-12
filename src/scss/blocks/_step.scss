@@ -77,3 +77,33 @@
     }
   }
 }
+
+@media (max-width: 1150px) {
+  .step {
+    margin-bottom: 100px;
+  }
+  .step__content-box {
+    flex-wrap: wrap;
+  }
+
+  .step__text {
+    flex-grow: 1;
+    margin-right: 80px;
+  }
+
+  .step__img {
+    flex-grow: 1;
+    min-width: 300px;
+    & img {
+      object-fit: cover;
+      height: 400px;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .step {
+    margin-bottom: 50px;
+  }
+}
